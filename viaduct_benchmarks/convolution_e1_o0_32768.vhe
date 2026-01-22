@@ -1,0 +1,134 @@
+val v_img_1: C = vector(img[0, 0, 0]<{0:8::1}, {2:64::1}, {1:64::1}>)
+val v_filter_1: N = vector(filter[0, 0]<{8}, {64[oob=(0,2)]}, {64[oob=(0,2)]}>)
+val v_filter_2: N = vector(filter[2, 0]<{8}, {64[oob=(0,2)]}, {64[oob=(0,2)]}>)
+val v_filter_3: N = vector(filter[1, 0]<{8}, {64[oob=(0,2)]}, {64[oob=(0,2)]}>)
+val v_filter_4: N = vector(filter[0, 2]<{8}, {64[oob=(0,2)]}, {64[oob=(0,2)]}>)
+val v_filter_5: N = vector(filter[1, 1]<{8}, {64[oob=(0,2)]}, {64[oob=(0,2)]}>)
+val v_filter_6: N = vector(filter[2, 2]<{8}, {64[oob=(0,2)]}, {64[oob=(0,2)]}>)
+val v_filter_7: N = vector(filter[1, 2]<{8}, {64[oob=(0,2)]}, {64[oob=(0,2)]}>)
+val v_filter_8: N = vector(filter[2, 1]<{8}, {64[oob=(0,2)]}, {64[oob=(0,2)]}>)
+val v_filter_9: N = vector(filter[0, 1]<{8}, {64[oob=(0,2)]}, {64[oob=(0,2)]}>)
+val mask_1: N = mask([(8, 0, 7), (64, 0, 62), (64, 0, 62)])
+val const_neg1: N = const(-1)
+encode(v_filter_3)
+encode(v_filter_2)
+encode(v_filter_8)
+encode(v_filter_5)
+encode(v_filter_9)
+encode(v_filter_1)
+encode(v_filter_7)
+encode(v_filter_6)
+encode(v_filter_4)
+encode(mask_1)
+encode(const_neg1)
+var pt2: P[3][3] = 0
+pt2[0][0] = v_filter_1
+pt2[0][1] = v_filter_3
+pt2[0][2] = v_filter_2
+pt2[1][0] = v_filter_9
+pt2[1][1] = v_filter_5
+pt2[1][2] = v_filter_8
+pt2[2][0] = v_filter_4
+pt2[2][1] = v_filter_7
+pt2[2][2] = v_filter_6
+var __out: C = 0
+var __reduce_2: C = 0
+CC: instr1_00 = rot 0 v_img_1
+CP: instr3_00 = instr1_00 * mask_1
+CP: instr5_00 = instr3_00 * pt2[0][0]
+CC: instr6_00 = rot -16384 instr5_00
+CC: instr7_00 = instr5_00 + instr6_00
+CC: instr8_00 = rot -8192 instr7_00
+CC: instr9_00 = instr7_00 + instr8_00
+CC: instr10_00 = rot -4096 instr9_00
+CC: instr11_00 = instr9_00 + instr10_00
+__reduce_1 = instr11_00
+CC: instr1_01 = rot -64 v_img_1
+CP: instr3_01 = instr1_01 * mask_1
+CP: instr5_01 = instr3_01 * pt2[1][0]
+CC: instr6_01 = rot -16384 instr5_01
+CC: instr7_01 = instr5_01 + instr6_01
+CC: instr8_01 = rot -8192 instr7_01
+CC: instr9_01 = instr7_01 + instr8_01
+CC: instr10_01 = rot -4096 instr9_01
+CC: instr11_01 = instr9_01 + instr10_01
+CC: instr12_01 = __reduce_1 + instr11_01
+CC: __reduce_1 = __reduce_1 + instr12_01
+CC: instr1_02 = rot -128 v_img_1
+CP: instr3_02 = instr1_02 * mask_1
+CP: instr5_02 = instr3_02 * pt2[2][0]
+CC: instr6_02 = rot -16384 instr5_02
+CC: instr7_02 = instr5_02 + instr6_02
+CC: instr8_02 = rot -8192 instr7_02
+CC: instr9_02 = instr7_02 + instr8_02
+CC: instr10_02 = rot -4096 instr9_02
+CC: instr11_02 = instr9_02 + instr10_02
+CC: instr12_02 = __reduce_1 + instr11_02
+CC: __reduce_1 = __reduce_1 + instr12_02
+CC: instr1_10 = rot -16 v_img_1
+CP: instr3_10 = instr1_10 * mask_1
+CP: instr5_10 = instr3_10 * pt2[0][1]
+CC: instr6_10 = rot -16384 instr5_10
+CC: instr7_10 = instr5_10 + instr6_10
+CC: instr8_10 = rot -8192 instr7_10
+CC: instr9_10 = instr7_10 + instr8_10
+CC: instr10_10 = rot -4096 instr9_10
+CC: instr11_10 = instr9_10 + instr10_10
+CC: instr12_10 = __reduce_1 + instr11_10
+CC: __reduce_1 = __reduce_1 + instr12_10
+CC: instr1_11 = rot -80 v_img_1
+CP: instr3_11 = instr1_11 * mask_1
+CP: instr5_11 = instr3_11 * pt2[1][1]
+CC: instr6_11 = rot -16384 instr5_11
+CC: instr7_11 = instr5_11 + instr6_11
+CC: instr8_11 = rot -8192 instr7_11
+CC: instr9_11 = instr7_11 + instr8_11
+CC: instr10_11 = rot -4096 instr9_11
+CC: instr11_11 = instr9_11 + instr10_11
+CC: instr12_11 = __reduce_1 + instr11_11
+CC: __reduce_1 = __reduce_1 + instr12_11
+CC: instr1_12 = rot -144 v_img_1
+CP: instr3_12 = instr1_12 * mask_1
+CP: instr5_12 = instr3_12 * pt2[2][1]
+CC: instr6_12 = rot -16384 instr5_12
+CC: instr7_12 = instr5_12 + instr6_12
+CC: instr8_12 = rot -8192 instr7_12
+CC: instr9_12 = instr7_12 + instr8_12
+CC: instr10_12 = rot -4096 instr9_12
+CC: instr11_12 = instr9_12 + instr10_12
+CC: instr12_12 = __reduce_1 + instr11_12
+CC: __reduce_1 = __reduce_1 + instr12_12
+CC: instr1_20 = rot -32 v_img_1
+CP: instr3_20 = instr1_20 * mask_1
+CP: instr5_20 = instr3_20 * pt2[0][2]
+CC: instr6_20 = rot -16384 instr5_20
+CC: instr7_20 = instr5_20 + instr6_20
+CC: instr8_20 = rot -8192 instr7_20
+CC: instr9_20 = instr7_20 + instr8_20
+CC: instr10_20 = rot -4096 instr9_20
+CC: instr11_20 = instr9_20 + instr10_20
+CC: instr12_20 = __reduce_1 + instr11_20
+CC: __reduce_1 = __reduce_1 + instr12_20
+CC: instr1_21 = rot -160 v_img_1
+CP: instr3_21 = instr1_21 * mask_1
+CP: instr5_21 = instr3_21 * pt2[1][2]
+CC: instr6_21 = rot -16384 instr5_21
+CC: instr7_21 = instr5_21 + instr6_21
+CC: instr8_21 = rot -8192 instr7_21
+CC: instr9_21 = instr7_21 + instr8_21
+CC: instr10_21 = rot -4096 instr9_21
+CC: instr11_21 = instr9_21 + instr10_21
+CC: instr12_21 = __reduce_1 + instr11_21
+CC: __reduce_1 = __reduce_1 + instr12_21
+CC: instr1_22 = rot -288 v_img_1
+CP: instr3_22 = instr1_22 * mask_1
+CP: instr5_22 = instr3_22 * pt2[2][2]
+CC: instr6_22 = rot -16384 instr5_22
+CC: instr7_22 = instr5_22 + instr6_22
+CC: instr8_22 = rot -8192 instr7_22
+CC: instr9_22 = instr7_22 + instr8_22
+CC: instr10_22 = rot -4096 instr9_22
+CC: instr11_22 = instr9_22 + instr10_22
+CC: instr12_22 = __reduce_1 + instr11_22
+CC: __reduce_1 = __reduce_1 + instr12_22
+__out = __reduce_1

@@ -1,0 +1,103 @@
+val v_img_1: C = vector(img[4, 0, 1]<{1:64::1[oob=(0,2)]}, {2:4::1[oob=(0,1)]}, {1:4::1[oob=(0,1)]}, {2:32::2[oob=(0,1)]}>)
+val v_img_2: C = vector(img[0, 0, 1]<{1:64::1[oob=(0,2)]}, {2:4::1[oob=(0,1)]}, {1:4::1[oob=(0,1)]}, {2:32::2[oob=(0,1)]}>)
+val v_img_3: C = vector(img[5, 0, 1]<{1:64::1[oob=(0,2)]}, {2:4::1[oob=(0,1)]}, {1:4::1[oob=(0,1)]}, {2:32::2[oob=(0,1)]}>)
+val v_img_4: C = vector(img[4, 0, 0]<{1:64::1[oob=(0,2)]}, {2:4::1[oob=(0,1)]}, {1:4::1[oob=(0,1)]}, {2:32::2[oob=(0,1)]}>)
+val v_img_5: C = vector(img[0, 0, 0]<{1:64::1[oob=(0,2)]}, {2:4::1[oob=(0,1)]}, {1:4::1[oob=(0,1)]}, {2:32::2[oob=(0,1)]}>)
+val v_img_6: C = vector(img[1, 0, 0]<{1:64::1[oob=(0,2)]}, {2:4::1[oob=(0,1)]}, {1:4::1[oob=(0,1)]}, {2:32::2[oob=(0,1)]}>)
+val v_img_7: C = vector(img[2, 0, 1]<{1:64::1[oob=(0,2)]}, {2:4::1[oob=(0,1)]}, {1:4::1[oob=(0,1)]}, {2:32::2[oob=(0,1)]}>)
+val v_img_8: C = vector(img[2, 0, 0]<{1:64::1[oob=(0,2)]}, {2:4::1[oob=(0,1)]}, {1:4::1[oob=(0,1)]}, {2:32::2[oob=(0,1)]}>)
+val v_img_9: C = vector(img[3, 0, 1]<{1:64::1[oob=(0,2)]}, {2:4::1[oob=(0,1)]}, {1:4::1[oob=(0,1)]}, {2:32::2[oob=(0,1)]}>)
+val v_img_10: C = vector(img[5, 0, 0]<{1:64::1[oob=(0,2)]}, {2:4::1[oob=(0,1)]}, {1:4::1[oob=(0,1)]}, {2:32::2[oob=(0,1)]}>)
+val v_img_11: C = vector(img[7, 0, 1]<{1:64::1[oob=(0,2)]}, {2:4::1[oob=(0,1)]}, {1:4::1[oob=(0,1)]}, {2:32::2[oob=(0,1)]}>)
+val v_img_12: C = vector(img[1, 0, 1]<{1:64::1[oob=(0,2)]}, {2:4::1[oob=(0,1)]}, {1:4::1[oob=(0,1)]}, {2:32::2[oob=(0,1)]}>)
+val v_img_13: C = vector(img[6, 0, 0]<{1:64::1[oob=(0,2)]}, {2:4::1[oob=(0,1)]}, {1:4::1[oob=(0,1)]}, {2:32::2[oob=(0,1)]}>)
+val v_img_14: C = vector(img[3, 0, 0]<{1:64::1[oob=(0,2)]}, {2:4::1[oob=(0,1)]}, {1:4::1[oob=(0,1)]}, {2:32::2[oob=(0,1)]}>)
+val v_img_15: C = vector(img[6, 0, 1]<{1:64::1[oob=(0,2)]}, {2:4::1[oob=(0,1)]}, {1:4::1[oob=(0,1)]}, {2:32::2[oob=(0,1)]}>)
+val v_img_16: C = vector(img[7, 0, 0]<{1:64::1[oob=(0,2)]}, {2:4::1[oob=(0,1)]}, {1:4::1[oob=(0,1)]}, {2:32::2[oob=(0,1)]}>)
+val v_filter_1: N = vector(filter[0, 0]<{64[oob=(0,2)]}, {1:4::1[oob=(0,1)]}, {0:4::1[oob=(0,1)]}, {32[oob=(0,1)]}>)
+val const_neg1: N = const(-1)
+encode(v_filter_1)
+encode(const_neg1)
+var ct1: C[8][2] = 0
+ct1[0][0] = v_img_5
+ct1[0][1] = v_img_2
+ct1[1][0] = v_img_6
+ct1[1][1] = v_img_12
+ct1[2][0] = v_img_8
+ct1[2][1] = v_img_7
+ct1[3][0] = v_img_14
+ct1[3][1] = v_img_9
+ct1[4][0] = v_img_4
+ct1[4][1] = v_img_1
+ct1[5][0] = v_img_10
+ct1[5][1] = v_img_3
+ct1[6][0] = v_img_13
+ct1[6][1] = v_img_15
+ct1[7][0] = v_img_16
+ct1[7][1] = v_img_11
+var __out: C[2] = 0
+CP: instr2_00 = ct1[0][0] * v_filter_1
+__reduce_1[0] = instr2_00
+CP: instr2_01 = ct1[1][0] * v_filter_1
+__reduce_1[1] = instr2_01
+CP: instr2_02 = ct1[2][0] * v_filter_1
+__reduce_1[2] = instr2_02
+CP: instr2_03 = ct1[3][0] * v_filter_1
+__reduce_1[3] = instr2_03
+CP: instr2_04 = ct1[4][0] * v_filter_1
+__reduce_1[4] = instr2_04
+CP: instr2_05 = ct1[5][0] * v_filter_1
+__reduce_1[5] = instr2_05
+CP: instr2_06 = ct1[6][0] * v_filter_1
+__reduce_1[6] = instr2_06
+CP: instr2_07 = ct1[7][0] * v_filter_1
+__reduce_1[7] = instr2_07
+CC: instr4_0 = __reduce_1[5] + __reduce_1[4]
+CC: instr5_0 = __reduce_1[7] + __reduce_1[6]
+CC: instr6_0 = instr4_0 + instr5_0
+CC: instr7_0 = __reduce_1[1] + __reduce_1[0]
+CC: instr8_0 = __reduce_1[3] + __reduce_1[2]
+CC: instr9_0 = instr7_0 + instr8_0
+CC: instr10_0 = instr6_0 + instr9_0
+CC: instr11_0 = rot -256 instr10_0
+CC: instr12_0 = instr10_0 + instr11_0
+CC: instr13_0 = rot -128 instr12_0
+CC: instr14_0 = instr12_0 + instr13_0
+CC: instr15_0 = rot -64 instr14_0
+CC: instr16_0 = instr14_0 + instr15_0
+CC: instr17_0 = rot -32 instr16_0
+CC: instr18_0 = instr17_0 + instr16_0
+__out[0] = instr18_0
+CP: instr2_10 = ct1[0][1] * v_filter_1
+__reduce_1[0]_ = instr2_10
+CP: instr2_11 = ct1[1][1] * v_filter_1
+__reduce_1[1]_ = instr2_11
+CP: instr2_12 = ct1[2][1] * v_filter_1
+__reduce_1[2]_ = instr2_12
+CP: instr2_13 = ct1[3][1] * v_filter_1
+__reduce_1[3]_ = instr2_13
+CP: instr2_14 = ct1[4][1] * v_filter_1
+__reduce_1[4]_ = instr2_14
+CP: instr2_15 = ct1[5][1] * v_filter_1
+__reduce_1[5]_ = instr2_15
+CP: instr2_16 = ct1[6][1] * v_filter_1
+__reduce_1[6]_ = instr2_16
+CP: instr2_17 = ct1[7][1] * v_filter_1
+__reduce_1[7]_ = instr2_17
+CC: instr4_1 = __reduce_1[5]_ + __reduce_1[4]_
+CC: instr5_1 = __reduce_1[7]_ + __reduce_1[6]_
+CC: instr6_1 = instr4_1 + instr5_1
+CC: instr7_1 = __reduce_1[1]_ + __reduce_1[0]_
+CC: instr8_1 = __reduce_1[3]_ + __reduce_1[2]_
+CC: instr9_1 = instr7_1 + instr8_1
+CC: instr10_1 = instr6_1 + instr9_1
+CC: instr11_1 = rot -256 instr10_1
+CC: instr12_1 = instr10_1 + instr11_1
+CC: instr13_1 = rot -128 instr12_1
+CC: instr14_1 = instr12_1 + instr13_1
+CC: instr15_1 = rot -64 instr14_1
+CC: instr16_1 = instr14_1 + instr15_1
+CC: instr17_1 = rot -32 instr16_1
+CC: instr18_1 = instr17_1 + instr16_1
+__out[1] = instr18_1
+CC: return = __out[0] + __out[1]

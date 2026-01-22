@@ -1,0 +1,61 @@
+val v_img_1: C = vector(img[4, 0, 1]<{1:62::1[oob=(0,2)]}, {2:3::1[oob=(0,1)]}, {1:3::1[oob=(0,1)]}, {2:31::2[oob=(0,1)]}>)
+val v_img_2: C = vector(img[0, 0, 1]<{1:62::1[oob=(0,2)]}, {2:3::1[oob=(0,1)]}, {1:3::1[oob=(0,1)]}, {2:31::2[oob=(0,1)]}>)
+val v_img_3: C = vector(img[5, 0, 1]<{1:62::1[oob=(0,2)]}, {2:3::1[oob=(0,1)]}, {1:3::1[oob=(0,1)]}, {2:31::2[oob=(0,1)]}>)
+val v_img_4: C = vector(img[4, 0, 0]<{1:62::1[oob=(0,2)]}, {2:3::1[oob=(0,1)]}, {1:3::1[oob=(0,1)]}, {2:31::2[oob=(0,1)]}>)
+val v_img_5: C = vector(img[0, 0, 0]<{1:62::1[oob=(0,2)]}, {2:3::1[oob=(0,1)]}, {1:3::1[oob=(0,1)]}, {2:31::2[oob=(0,1)]}>)
+val v_img_6: C = vector(img[1, 0, 0]<{1:62::1[oob=(0,2)]}, {2:3::1[oob=(0,1)]}, {1:3::1[oob=(0,1)]}, {2:31::2[oob=(0,1)]}>)
+val v_img_7: C = vector(img[2, 0, 1]<{1:62::1[oob=(0,2)]}, {2:3::1[oob=(0,1)]}, {1:3::1[oob=(0,1)]}, {2:31::2[oob=(0,1)]}>)
+val v_img_8: C = vector(img[2, 0, 0]<{1:62::1[oob=(0,2)]}, {2:3::1[oob=(0,1)]}, {1:3::1[oob=(0,1)]}, {2:31::2[oob=(0,1)]}>)
+val v_img_9: C = vector(img[3, 0, 1]<{1:62::1[oob=(0,2)]}, {2:3::1[oob=(0,1)]}, {1:3::1[oob=(0,1)]}, {2:31::2[oob=(0,1)]}>)
+val v_img_10: C = vector(img[5, 0, 0]<{1:62::1[oob=(0,2)]}, {2:3::1[oob=(0,1)]}, {1:3::1[oob=(0,1)]}, {2:31::2[oob=(0,1)]}>)
+val v_img_11: C = vector(img[7, 0, 1]<{1:62::1[oob=(0,2)]}, {2:3::1[oob=(0,1)]}, {1:3::1[oob=(0,1)]}, {2:31::2[oob=(0,1)]}>)
+val v_img_12: C = vector(img[1, 0, 1]<{1:62::1[oob=(0,2)]}, {2:3::1[oob=(0,1)]}, {1:3::1[oob=(0,1)]}, {2:31::2[oob=(0,1)]}>)
+val v_img_13: C = vector(img[6, 0, 0]<{1:62::1[oob=(0,2)]}, {2:3::1[oob=(0,1)]}, {1:3::1[oob=(0,1)]}, {2:31::2[oob=(0,1)]}>)
+val v_img_14: C = vector(img[3, 0, 0]<{1:62::1[oob=(0,2)]}, {2:3::1[oob=(0,1)]}, {1:3::1[oob=(0,1)]}, {2:31::2[oob=(0,1)]}>)
+val v_img_15: C = vector(img[6, 0, 1]<{1:62::1[oob=(0,2)]}, {2:3::1[oob=(0,1)]}, {1:3::1[oob=(0,1)]}, {2:31::2[oob=(0,1)]}>)
+val v_img_16: C = vector(img[7, 0, 0]<{1:62::1[oob=(0,2)]}, {2:3::1[oob=(0,1)]}, {1:3::1[oob=(0,1)]}, {2:31::2[oob=(0,1)]}>)
+val v_filter_1: N = vector(filter[0, 0]<{62[oob=(0,2)]}, {1:3::1[oob=(0,1)]}, {0:3::1[oob=(0,1)]}, {31[oob=(0,1)]}>)
+val const_neg1: N = const(-1)
+encode(v_filter_1)
+encode(const_neg1)
+var ct1: C[8][2] = 0
+ct1[0][0] = v_img_5
+ct1[0][1] = v_img_2
+ct1[1][0] = v_img_6
+ct1[1][1] = v_img_12
+ct1[2][0] = v_img_8
+ct1[2][1] = v_img_7
+ct1[3][0] = v_img_14
+ct1[3][1] = v_img_9
+ct1[4][0] = v_img_4
+ct1[4][1] = v_img_1
+ct1[5][0] = v_img_10
+ct1[5][1] = v_img_3
+ct1[6][0] = v_img_13
+ct1[6][1] = v_img_15
+ct1[7][0] = v_img_16
+ct1[7][1] = v_img_11
+var __out: C[2] = 0
+for i5i: 2 {
+    var __reduce_1: C[8] = 0
+    for i9: 8 {
+        CP: instr2 = ct1[i9][i5i] * v_filter_1
+        __reduce_1[i9] = instr2
+    }
+    CC: instr4 = __reduce_1[5] + __reduce_1[4]
+    CC: instr5 = __reduce_1[7] + __reduce_1[6]
+    CC: instr6 = instr4 + instr5
+    CC: instr7 = __reduce_1[1] + __reduce_1[0]
+    CC: instr8 = __reduce_1[3] + __reduce_1[2]
+    CC: instr9 = instr7 + instr8
+    CC: instr10 = instr6 + instr9
+    CC: instr11 = rot -256 instr10
+    CC: instr12 = instr10 + instr11
+    CC: instr13 = rot -128 instr12
+    CC: instr14 = instr12 + instr13
+    CC: instr15 = rot -64 instr14
+    CC: instr16 = instr14 + instr15
+    CC: instr17 = rot -32 instr16
+    CC: instr18 = instr17 + instr16
+    __out[i5i] = instr18
+}

@@ -1,0 +1,50 @@
+13 45 13 19
+PersistedDictionary /home/ubuntu/fhelipe_experiments/rotom_conv2d/shared/ch_ir
+101 1 53  ZeroC 1 90  0 
+103 1 54  ZeroC 1 45  0 
+100 1 51  InputC 13 0  3 45  0 
+102 1 52  ZeroC 1 45  0 
+108 1 56  RotateC 8184 3 45  1 100 
+107 1 58  RotateC 7936 3 45  1 100 
+105 1 59  RotateC 256 3 45  1 100 
+106 1 57  MulCP __1 45 3 90  1 100 
+104 1 55  RotateC 8 3 45  1 100 
+115 1 64  RotateC 256 3 45  1 108 
+116 1 65  MulCP __3 45 3 90  1 108 
+117 1 63  RotateC 7936 3 45  1 108 
+114 1 67  MulCP __4 45 3 90  1 107 
+112 1 68  MulCP __5 45 3 90  1 105 
+113 1 66  RescaleC 2 45  1 106 
+109 1 62  MulCP __2 45 3 90  1 104 
+110 1 61  RotateC 7936 3 45  1 104 
+111 1 60  RotateC 256 3 45  1 104 
+123 1 73  MulCP __9 45 3 90  1 115 
+124 1 74  RescaleC 2 45  1 116 
+125 1 72  MulCP __8 45 3 90  1 117 
+122 1 75  RescaleC 2 45  1 114 
+121 1 76  RescaleC 2 45  1 112 
+118 1 71  RescaleC 2 45  1 109 
+119 1 70  MulCP __7 45 3 90  1 110 
+120 1 69  MulCP __6 45 3 90  1 111 
+128 1 80  RescaleC 2 45  1 123 
+129 1 79  RescaleC 2 45  1 125 
+126 1 78  RescaleC 2 45  1 119 
+127 1 77  RescaleC 2 45  1 120 
+130 1 81  AddCP __10 45 2 45  1 127 
+131 1 82  AddCC 2 45  2 130 118 
+132 1 83  AddCC 2 45  2 131 126 
+133 1 84  AddCC 2 45  2 132 121 
+134 1 85  AddCC 2 45  2 133 113 
+135 1 86  AddCC 2 45  2 134 122 
+136 1 87  AddCC 2 45  2 135 128 
+137 1 88  AddCC 2 45  2 136 124 
+138 1 89  AddCC 2 45  2 137 129 
+139 1 90  RotateC -4 2 45  1 138 
+140 1 91  AddCC 2 45  2 139 138 
+141 1 92  RotateC -2 2 45  1 140 
+142 1 93  AddCC 2 45  2 141 140 
+143 1 94  RotateC -1 2 45  1 142 
+144 1 95  AddCC 2 45  2 143 142 
+145 1 96  MulCP __11 45 2 90  1 144 
+146 1 97  RescaleC 1 45  1 145 
+147 1 98  OutputC result 0  1 45  1 146 

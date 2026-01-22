@@ -1,0 +1,405 @@
+val v_A_1: C = vector(A[0, 0]<{1:64::1}, {0:128::1}>)
+val v_B1_1: N = vector(B1[0, 10]<{0:64::1}, {128}>)
+val v_B1_2: N = vector(B1[0, 16]<{0:64::1}, {128}>)
+val v_B1_3: N = vector(B1[0, 61]<{0:64::1}, {128}>)
+val v_B1_4: N = vector(B1[0, 108]<{0:64::1}, {128}>)
+val v_B1_5: N = vector(B1[0, 33]<{0:64::1}, {128}>)
+val v_B1_6: N = vector(B1[0, 66]<{0:64::1}, {128}>)
+val v_B1_7: N = vector(B1[0, 41]<{0:64::1}, {128}>)
+val v_B1_8: N = vector(B1[0, 53]<{0:64::1}, {128}>)
+val v_B1_9: N = vector(B1[0, 69]<{0:64::1}, {128}>)
+val v_B1_10: N = vector(B1[0, 34]<{0:64::1}, {128}>)
+val v_B1_11: N = vector(B1[0, 40]<{0:64::1}, {128}>)
+val v_B1_12: N = vector(B1[0, 117]<{0:64::1}, {128}>)
+val v_B1_13: N = vector(B1[0, 73]<{0:64::1}, {128}>)
+val v_B1_14: N = vector(B1[0, 27]<{0:64::1}, {128}>)
+val v_B1_15: N = vector(B1[0, 82]<{0:64::1}, {128}>)
+val v_B1_16: N = vector(B1[0, 91]<{0:64::1}, {128}>)
+val v_B1_17: N = vector(B1[0, 19]<{0:64::1}, {128}>)
+val v_B1_18: N = vector(B1[0, 95]<{0:64::1}, {128}>)
+val v_B1_19: N = vector(B1[0, 22]<{0:64::1}, {128}>)
+val v_B1_20: N = vector(B1[0, 12]<{0:64::1}, {128}>)
+val v_B1_21: N = vector(B1[0, 125]<{0:64::1}, {128}>)
+val v_B1_22: N = vector(B1[0, 24]<{0:64::1}, {128}>)
+val v_B1_23: N = vector(B1[0, 63]<{0:64::1}, {128}>)
+val v_B1_24: N = vector(B1[0, 101]<{0:64::1}, {128}>)
+val v_B1_25: N = vector(B1[0, 57]<{0:64::1}, {128}>)
+val v_B1_26: N = vector(B1[0, 58]<{0:64::1}, {128}>)
+val v_B1_27: N = vector(B1[0, 123]<{0:64::1}, {128}>)
+val v_B1_28: N = vector(B1[0, 114]<{0:64::1}, {128}>)
+val v_B1_29: N = vector(B1[0, 56]<{0:64::1}, {128}>)
+val v_B1_30: N = vector(B1[0, 94]<{0:64::1}, {128}>)
+val v_B1_31: N = vector(B1[0, 116]<{0:64::1}, {128}>)
+val v_B1_32: N = vector(B1[0, 98]<{0:64::1}, {128}>)
+val v_B1_33: N = vector(B1[0, 119]<{0:64::1}, {128}>)
+val v_B1_34: N = vector(B1[0, 17]<{0:64::1}, {128}>)
+val v_B1_35: N = vector(B1[0, 88]<{0:64::1}, {128}>)
+val v_B1_36: N = vector(B1[0, 92]<{0:64::1}, {128}>)
+val v_B1_37: N = vector(B1[0, 21]<{0:64::1}, {128}>)
+val v_B1_38: N = vector(B1[0, 126]<{0:64::1}, {128}>)
+val v_B1_39: N = vector(B1[0, 8]<{0:64::1}, {128}>)
+val v_B1_40: N = vector(B1[0, 43]<{0:64::1}, {128}>)
+val v_B1_41: N = vector(B1[0, 47]<{0:64::1}, {128}>)
+val v_B1_42: N = vector(B1[0, 49]<{0:64::1}, {128}>)
+val v_B1_43: N = vector(B1[0, 113]<{0:64::1}, {128}>)
+val v_B1_44: N = vector(B1[0, 26]<{0:64::1}, {128}>)
+val v_B1_45: N = vector(B1[0, 100]<{0:64::1}, {128}>)
+val v_B1_46: N = vector(B1[0, 103]<{0:64::1}, {128}>)
+val v_B1_47: N = vector(B1[0, 7]<{0:64::1}, {128}>)
+val v_B1_48: N = vector(B1[0, 102]<{0:64::1}, {128}>)
+val v_B1_49: N = vector(B1[0, 89]<{0:64::1}, {128}>)
+val v_B1_50: N = vector(B1[0, 70]<{0:64::1}, {128}>)
+val v_B1_51: N = vector(B1[0, 127]<{0:64::1}, {128}>)
+val v_B1_52: N = vector(B1[0, 30]<{0:64::1}, {128}>)
+val v_B1_53: N = vector(B1[0, 52]<{0:64::1}, {128}>)
+val v_B1_54: N = vector(B1[0, 1]<{0:64::1}, {128}>)
+val v_B1_55: N = vector(B1[0, 4]<{0:64::1}, {128}>)
+val v_B1_56: N = vector(B1[0, 97]<{0:64::1}, {128}>)
+val v_B1_57: N = vector(B1[0, 72]<{0:64::1}, {128}>)
+val v_B1_58: N = vector(B1[0, 121]<{0:64::1}, {128}>)
+val v_B1_59: N = vector(B1[0, 35]<{0:64::1}, {128}>)
+val v_B1_60: N = vector(B1[0, 71]<{0:64::1}, {128}>)
+val v_B1_61: N = vector(B1[0, 80]<{0:64::1}, {128}>)
+val v_B1_62: N = vector(B1[0, 45]<{0:64::1}, {128}>)
+val v_B1_63: N = vector(B1[0, 23]<{0:64::1}, {128}>)
+val v_B1_64: N = vector(B1[0, 37]<{0:64::1}, {128}>)
+val v_B1_65: N = vector(B1[0, 51]<{0:64::1}, {128}>)
+val v_B1_66: N = vector(B1[0, 28]<{0:64::1}, {128}>)
+val v_B1_67: N = vector(B1[0, 111]<{0:64::1}, {128}>)
+val v_B1_68: N = vector(B1[0, 31]<{0:64::1}, {128}>)
+val v_B1_69: N = vector(B1[0, 78]<{0:64::1}, {128}>)
+val v_B1_70: N = vector(B1[0, 29]<{0:64::1}, {128}>)
+val v_B1_71: N = vector(B1[0, 36]<{0:64::1}, {128}>)
+val v_B1_72: N = vector(B1[0, 50]<{0:64::1}, {128}>)
+val v_B1_73: N = vector(B1[0, 11]<{0:64::1}, {128}>)
+val v_B1_74: N = vector(B1[0, 59]<{0:64::1}, {128}>)
+val v_B1_75: N = vector(B1[0, 64]<{0:64::1}, {128}>)
+val v_B1_76: N = vector(B1[0, 62]<{0:64::1}, {128}>)
+val v_B1_77: N = vector(B1[0, 90]<{0:64::1}, {128}>)
+val v_B1_78: N = vector(B1[0, 118]<{0:64::1}, {128}>)
+val v_B1_79: N = vector(B1[0, 112]<{0:64::1}, {128}>)
+val v_B1_80: N = vector(B1[0, 0]<{0:64::1}, {128}>)
+val v_B1_81: N = vector(B1[0, 15]<{0:64::1}, {128}>)
+val v_B1_82: N = vector(B1[0, 3]<{0:64::1}, {128}>)
+val v_B1_83: N = vector(B1[0, 65]<{0:64::1}, {128}>)
+val v_B1_84: N = vector(B1[0, 76]<{0:64::1}, {128}>)
+val v_B1_85: N = vector(B1[0, 77]<{0:64::1}, {128}>)
+val v_B1_86: N = vector(B1[0, 46]<{0:64::1}, {128}>)
+val v_B1_87: N = vector(B1[0, 87]<{0:64::1}, {128}>)
+val v_B1_88: N = vector(B1[0, 6]<{0:64::1}, {128}>)
+val v_B1_89: N = vector(B1[0, 32]<{0:64::1}, {128}>)
+val v_B1_90: N = vector(B1[0, 13]<{0:64::1}, {128}>)
+val v_B1_91: N = vector(B1[0, 38]<{0:64::1}, {128}>)
+val v_B1_92: N = vector(B1[0, 68]<{0:64::1}, {128}>)
+val v_B1_93: N = vector(B1[0, 115]<{0:64::1}, {128}>)
+val v_B1_94: N = vector(B1[0, 20]<{0:64::1}, {128}>)
+val v_B1_95: N = vector(B1[0, 83]<{0:64::1}, {128}>)
+val v_B1_96: N = vector(B1[0, 55]<{0:64::1}, {128}>)
+val v_B1_97: N = vector(B1[0, 25]<{0:64::1}, {128}>)
+val v_B1_98: N = vector(B1[0, 79]<{0:64::1}, {128}>)
+val v_B1_99: N = vector(B1[0, 85]<{0:64::1}, {128}>)
+val v_B1_100: N = vector(B1[0, 93]<{0:64::1}, {128}>)
+val v_B1_101: N = vector(B1[0, 106]<{0:64::1}, {128}>)
+val v_B1_102: N = vector(B1[0, 120]<{0:64::1}, {128}>)
+val v_B1_103: N = vector(B1[0, 104]<{0:64::1}, {128}>)
+val v_B1_104: N = vector(B1[0, 110]<{0:64::1}, {128}>)
+val v_B1_105: N = vector(B1[0, 122]<{0:64::1}, {128}>)
+val v_B1_106: N = vector(B1[0, 124]<{0:64::1}, {128}>)
+val v_B1_107: N = vector(B1[0, 81]<{0:64::1}, {128}>)
+val v_B1_108: N = vector(B1[0, 42]<{0:64::1}, {128}>)
+val v_B1_109: N = vector(B1[0, 54]<{0:64::1}, {128}>)
+val v_B1_110: N = vector(B1[0, 60]<{0:64::1}, {128}>)
+val v_B1_111: N = vector(B1[0, 9]<{0:64::1}, {128}>)
+val v_B1_112: N = vector(B1[0, 109]<{0:64::1}, {128}>)
+val v_B1_113: N = vector(B1[0, 2]<{0:64::1}, {128}>)
+val v_B1_114: N = vector(B1[0, 105]<{0:64::1}, {128}>)
+val v_B1_115: N = vector(B1[0, 18]<{0:64::1}, {128}>)
+val v_B1_116: N = vector(B1[0, 74]<{0:64::1}, {128}>)
+val v_B1_117: N = vector(B1[0, 86]<{0:64::1}, {128}>)
+val v_B1_118: N = vector(B1[0, 107]<{0:64::1}, {128}>)
+val v_B1_119: N = vector(B1[0, 5]<{0:64::1}, {128}>)
+val v_B1_120: N = vector(B1[0, 96]<{0:64::1}, {128}>)
+val v_B1_121: N = vector(B1[0, 48]<{0:64::1}, {128}>)
+val v_B1_122: N = vector(B1[0, 39]<{0:64::1}, {128}>)
+val v_B1_123: N = vector(B1[0, 84]<{0:64::1}, {128}>)
+val v_B1_124: N = vector(B1[0, 14]<{0:64::1}, {128}>)
+val v_B1_125: N = vector(B1[0, 44]<{0:64::1}, {128}>)
+val v_B1_126: N = vector(B1[0, 67]<{0:64::1}, {128}>)
+val v_B1_127: N = vector(B1[0, 75]<{0:64::1}, {128}>)
+val v_B1_128: N = vector(B1[0, 99]<{0:64::1}, {128}>)
+val const_neg1: N = const(-1)
+encode(v_B1_110)
+encode(v_B1_103)
+encode(v_B1_97)
+encode(v_B1_122)
+encode(v_B1_10)
+encode(v_B1_72)
+encode(v_B1_53)
+encode(v_B1_80)
+encode(v_B1_38)
+encode(v_B1_45)
+encode(v_B1_6)
+encode(v_B1_56)
+encode(v_B1_28)
+encode(v_B1_64)
+encode(v_B1_124)
+encode(v_B1_67)
+encode(v_B1_41)
+encode(v_B1_127)
+encode(v_B1_108)
+encode(v_B1_70)
+encode(v_B1_104)
+encode(v_B1_44)
+encode(v_B1_21)
+encode(v_B1_30)
+encode(v_B1_52)
+encode(v_B1_105)
+encode(v_B1_40)
+encode(v_B1_83)
+encode(v_B1_50)
+encode(v_B1_116)
+encode(v_B1_87)
+encode(v_B1_79)
+encode(v_B1_66)
+encode(v_B1_37)
+encode(v_B1_68)
+encode(v_B1_69)
+encode(v_B1_119)
+encode(v_B1_57)
+encode(v_B1_32)
+encode(v_B1_46)
+encode(v_B1_19)
+encode(v_B1_27)
+encode(v_B1_95)
+encode(v_B1_24)
+encode(v_B1_31)
+encode(v_B1_99)
+encode(v_B1_16)
+encode(v_B1_9)
+encode(v_B1_13)
+encode(v_B1_92)
+encode(v_B1_12)
+encode(v_B1_20)
+encode(v_B1_7)
+encode(v_B1_29)
+encode(v_B1_98)
+encode(v_B1_4)
+encode(v_B1_78)
+encode(v_B1_125)
+encode(v_B1_42)
+encode(v_B1_77)
+encode(v_B1_1)
+encode(v_B1_22)
+encode(v_B1_91)
+encode(v_B1_62)
+encode(v_B1_75)
+encode(v_B1_23)
+encode(v_B1_8)
+encode(v_B1_90)
+encode(v_B1_11)
+encode(v_B1_55)
+encode(v_B1_39)
+encode(v_B1_81)
+encode(v_B1_121)
+encode(v_B1_117)
+encode(v_B1_118)
+encode(v_B1_96)
+encode(v_B1_71)
+encode(v_B1_17)
+encode(v_B1_51)
+encode(v_B1_61)
+encode(v_B1_102)
+encode(v_B1_60)
+encode(v_B1_106)
+encode(v_B1_54)
+encode(v_B1_128)
+encode(v_B1_25)
+encode(v_B1_111)
+encode(v_B1_93)
+encode(v_B1_100)
+encode(v_B1_82)
+encode(v_B1_107)
+encode(v_B1_47)
+encode(v_B1_18)
+encode(v_B1_5)
+encode(v_B1_109)
+encode(v_B1_88)
+encode(v_B1_86)
+encode(v_B1_113)
+encode(v_B1_123)
+encode(v_B1_73)
+encode(v_B1_126)
+encode(v_B1_15)
+encode(v_B1_33)
+encode(v_B1_63)
+encode(v_B1_26)
+encode(v_B1_36)
+encode(v_B1_43)
+encode(v_B1_74)
+encode(v_B1_89)
+encode(v_B1_85)
+encode(v_B1_94)
+encode(v_B1_76)
+encode(v_B1_48)
+encode(v_B1_65)
+encode(v_B1_120)
+encode(v_B1_49)
+encode(v_B1_101)
+encode(v_B1_58)
+encode(v_B1_2)
+encode(v_B1_14)
+encode(v_B1_3)
+encode(v_B1_115)
+encode(v_B1_112)
+encode(v_B1_59)
+encode(v_B1_35)
+encode(v_B1_114)
+encode(v_B1_34)
+encode(v_B1_84)
+encode(const_neg1)
+var pt1: P[128] = 0
+pt1[0] = v_B1_80
+pt1[1] = v_B1_54
+pt1[2] = v_B1_113
+pt1[3] = v_B1_82
+pt1[4] = v_B1_55
+pt1[5] = v_B1_119
+pt1[6] = v_B1_88
+pt1[7] = v_B1_47
+pt1[8] = v_B1_39
+pt1[9] = v_B1_111
+pt1[10] = v_B1_1
+pt1[11] = v_B1_73
+pt1[12] = v_B1_20
+pt1[13] = v_B1_90
+pt1[14] = v_B1_124
+pt1[15] = v_B1_81
+pt1[16] = v_B1_2
+pt1[17] = v_B1_34
+pt1[18] = v_B1_115
+pt1[19] = v_B1_17
+pt1[20] = v_B1_94
+pt1[21] = v_B1_37
+pt1[22] = v_B1_19
+pt1[23] = v_B1_63
+pt1[24] = v_B1_22
+pt1[25] = v_B1_97
+pt1[26] = v_B1_44
+pt1[27] = v_B1_14
+pt1[28] = v_B1_66
+pt1[29] = v_B1_70
+pt1[30] = v_B1_52
+pt1[31] = v_B1_68
+pt1[32] = v_B1_89
+pt1[33] = v_B1_5
+pt1[34] = v_B1_10
+pt1[35] = v_B1_59
+pt1[36] = v_B1_71
+pt1[37] = v_B1_64
+pt1[38] = v_B1_91
+pt1[39] = v_B1_122
+pt1[40] = v_B1_11
+pt1[41] = v_B1_7
+pt1[42] = v_B1_108
+pt1[43] = v_B1_40
+pt1[44] = v_B1_125
+pt1[45] = v_B1_62
+pt1[46] = v_B1_86
+pt1[47] = v_B1_41
+pt1[48] = v_B1_121
+pt1[49] = v_B1_42
+pt1[50] = v_B1_72
+pt1[51] = v_B1_65
+pt1[52] = v_B1_53
+pt1[53] = v_B1_8
+pt1[54] = v_B1_109
+pt1[55] = v_B1_96
+pt1[56] = v_B1_29
+pt1[57] = v_B1_25
+pt1[58] = v_B1_26
+pt1[59] = v_B1_74
+pt1[60] = v_B1_110
+pt1[61] = v_B1_3
+pt1[62] = v_B1_76
+pt1[63] = v_B1_23
+pt1[64] = v_B1_75
+pt1[65] = v_B1_83
+pt1[66] = v_B1_6
+pt1[67] = v_B1_126
+pt1[68] = v_B1_92
+pt1[69] = v_B1_9
+pt1[70] = v_B1_50
+pt1[71] = v_B1_60
+pt1[72] = v_B1_57
+pt1[73] = v_B1_13
+pt1[74] = v_B1_116
+pt1[75] = v_B1_127
+pt1[76] = v_B1_84
+pt1[77] = v_B1_85
+pt1[78] = v_B1_69
+pt1[79] = v_B1_98
+pt1[80] = v_B1_61
+pt1[81] = v_B1_107
+pt1[82] = v_B1_15
+pt1[83] = v_B1_95
+pt1[84] = v_B1_123
+pt1[85] = v_B1_99
+pt1[86] = v_B1_117
+pt1[87] = v_B1_87
+pt1[88] = v_B1_35
+pt1[89] = v_B1_49
+pt1[90] = v_B1_77
+pt1[91] = v_B1_16
+pt1[92] = v_B1_36
+pt1[93] = v_B1_100
+pt1[94] = v_B1_30
+pt1[95] = v_B1_18
+pt1[96] = v_B1_120
+pt1[97] = v_B1_56
+pt1[98] = v_B1_32
+pt1[99] = v_B1_128
+pt1[100] = v_B1_45
+pt1[101] = v_B1_24
+pt1[102] = v_B1_48
+pt1[103] = v_B1_46
+pt1[104] = v_B1_103
+pt1[105] = v_B1_114
+pt1[106] = v_B1_101
+pt1[107] = v_B1_118
+pt1[108] = v_B1_4
+pt1[109] = v_B1_112
+pt1[110] = v_B1_104
+pt1[111] = v_B1_67
+pt1[112] = v_B1_79
+pt1[113] = v_B1_43
+pt1[114] = v_B1_28
+pt1[115] = v_B1_93
+pt1[116] = v_B1_31
+pt1[117] = v_B1_12
+pt1[118] = v_B1_78
+pt1[119] = v_B1_33
+pt1[120] = v_B1_102
+pt1[121] = v_B1_58
+pt1[122] = v_B1_105
+pt1[123] = v_B1_27
+pt1[124] = v_B1_106
+pt1[125] = v_B1_21
+pt1[126] = v_B1_38
+pt1[127] = v_B1_51
+var __out: C[128] = 0
+for i5: 128 {
+    CP: instr2 = v_A_1 * pt1[i5]
+    CC: instr3 = rot -4096 instr2
+    CC: instr4 = instr2 + instr3
+    CC: instr5 = rot -2048 instr4
+    CC: instr6 = instr4 + instr5
+    CC: instr7 = rot -1024 instr6
+    CC: instr8 = instr6 + instr7
+    CC: instr9 = rot -512 instr8
+    CC: instr10 = instr8 + instr9
+    CC: instr11 = rot -256 instr10
+    CC: instr12 = instr10 + instr11
+    CC: instr13 = rot -128 instr12
+    CC: instr14 = instr12 + instr13
+    __out[i5] = instr14
+}
