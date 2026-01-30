@@ -1,0 +1,13 @@
+input img: [8, 64, 64] from server
+input filter: [3, 3] from server
+for x: 64 {
+    for y: 64 {
+        sum(for z: 8 {
+            sum(for i: 3 {
+                sum(for j: 3 {
+                    img[z][x + i - 1][y + j - 1] * filter[i][j]
+                })
+            })
+        })
+    }
+}

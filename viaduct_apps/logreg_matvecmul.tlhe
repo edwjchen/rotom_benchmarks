@@ -1,0 +1,11 @@
+input v: [256,1] from server
+input m_0: [1024,256] from server
+input m_1: [256,1024] from server
+let v2 =
+    for i: 1024 {
+        sum(for k: 256 { m_0[i][k] * v[k][0] })
+    }
+in
+for i: 256 {
+    sum(for k: 1024 { m_1[i][k] * v2[k] })
+}

@@ -1,0 +1,7 @@
+input A: [128,64] from server
+input B: [64,128] from client
+for i: 128 {
+    for j: 128 {
+        sum(for k: 64 { A[i][k] * B[k][j] })
+    }
+}

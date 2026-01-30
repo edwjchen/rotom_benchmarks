@@ -1,0 +1,40 @@
+input h: [128, 768] from server
+input wq: [768, 768] from server
+input bq: [768] from server
+input wk: [768, 768] from server
+input bk: [768] from server
+input wv: [768, 768] from server
+input bv: [768] from server
+let Q =
+    for i: 128 {
+        for j: 768 {
+            sum(for k: 768 { h[i][k] * wq[k][j] }) + bq[j]
+        }
+    }
+in
+let K =
+    for i: 128 {
+        for j: 768 {
+            sum(for k: 768 { h[i][k] * wk[k][j] }) + bk[j]
+        }
+    }
+in
+let V =
+    for i: 128 {
+        for j: 768 {
+            sum(for k: 768 { h[i][k] * wv[k][j] }) + bv[j]
+        }
+    }
+in
+let QK =
+    for i: 128 {
+        for j: 128 {
+            sum(for k: 768 { Q[i][k] * K[j][k] })
+        }
+    }
+in
+for i: 128 {
+    for j: 768 {
+        sum(for k: 128 { QK[i][k] * V[k][j] })
+    }
+}

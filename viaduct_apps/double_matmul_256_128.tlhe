@@ -1,0 +1,15 @@
+input A1: [256,128] from server
+input A2: [128,256] from server
+input B: [256,128] from server
+let res =
+    for i: 256 {
+        for j: 256 {
+            sum(for k: 128 { A1[i][k] * B[k][j] })
+        }
+    }
+in
+for i: 256 {
+    for j: 128 {
+        sum(for k: 256 { A2[i][k] * res[k][j] })
+    }
+}

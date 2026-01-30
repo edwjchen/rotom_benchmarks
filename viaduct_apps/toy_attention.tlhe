@@ -1,0 +1,38 @@
+input H: [16,16] from client
+input Wq: [16,16] from server
+input Bq: [16] from server 
+input Wk: [16,16] from server
+input Bk: [16] from server 
+let Q =
+    for i: 16 {
+        for j: 16 {
+            sum(for k: 16 { H[i][k] * Wq[k][j] })
+        }
+    }
+in
+let Q_b = 
+    for i: 16 {
+        for j: 16 {
+            Q[i][j] + Bq[j]
+        }
+    }
+in 
+let K = 
+    for i: 16 {
+        for j: 16 {
+            sum(for k: 16 { H[i][k] * Wk[k][j] })
+        }
+    }
+in 
+let K_b = 
+    for i: 16 {
+        for j: 16 {
+            K[i][j] + Bk[j]
+        }
+    }
+in 
+for i: 16 {
+    for j: 16 {
+        sum(for k: 16 { Q_b[i][k] * K_b[j][k] })
+    }
+}

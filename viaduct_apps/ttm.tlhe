@@ -1,0 +1,9 @@
+input t: [64,64,64] from server
+input m: [64,64] from server
+for i: 64 {
+    for j: 64 {
+        for k: 64 {
+            sum(for l: 64 { t[i][j][l] * m[l][k] })
+        }
+    }
+}
